@@ -1,9 +1,9 @@
-import { ToggleTheme } from "@/components/ui/toggle-theme";
+import { AboutMe } from "@/components/about-me";
 
 export default function Home() {
   return (
-    <div>
-      
-    </div>
+    <main className="px-4 py-2 w-full min-h-screen grid">
+      <AboutMe />
+    </main>
   );
 }

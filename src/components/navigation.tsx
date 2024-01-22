@@ -15,7 +15,7 @@ const navItems = [
 
 function Navigation() {
   return (
-    <nav className="w-full flex gap-2 items-center justify-between">
+    <nav className="w-full flex gap-2 items-center justify-between px-4 py-2 border-b dark:border-b-zinc-800">
       <div>
         <Link href={"/"} className="tracking-wider text-sm">
           Fullstack Develop
