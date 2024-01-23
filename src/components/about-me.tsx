@@ -3,8 +3,8 @@ import Link from "next/link";
 
 function AboutMe() {
   return (
-    <div className="flex items-center">
-      <div className="flex flex-col items-center w-full gap-10 text-xs sm:text-sm tracking-wide md:flex-row">
+    <section className="w-full min-h-full grid place-items-center">
+      <div className="flex flex-col items-center w-fit gap-10 text-xs sm:text-sm tracking-wide md:flex-row">
         <div className="h-fit p-4">
           <Image
             alt="Foto pessoal de perfil"
@@ -16,7 +16,9 @@ function AboutMe() {
         </div>
 
         <div className="flex flex-col gap-2 max-w-md">
-          <h1 className="text-base">Olá, me chamo Bruno Azevedo.</h1>
+          <h1 className="text-base font-semibold">
+            Olá, me chamo Bruno Azevedo.
+          </h1>
           <p>
             Desenvolvedor entusiamado em criar soluções utilizando tecnologias e
             seus ecossistemas como Rust, Javascript e Python!
@@ -24,19 +26,19 @@ function AboutMe() {
           <span className="border-b py-1">
             Nesse portfolio você vai entender mais sobre:
           </span>
-          <ul className="flex flex-col gap-2 ">
-            <li>Trajeto pessoal, educacional e profissional.</li>
+          <ul className="flex flex-col gap-2 ml-4">
+            <li>Trajeto educacional e profissional.</li>
             <li>
               Ideias e opiniões acessando meu{" "}
-              <Link href={"/blog"} className="hover:underline">
+              <Link href={"/blog"} className="underline">
                 blog pessoal.
               </Link>
             </li>
-            <li>Projetos pessoais e participações.</li>
+            <li>Projetos com documentações e participações.</li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

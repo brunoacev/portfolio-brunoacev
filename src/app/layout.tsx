@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={cn("w-full", inter.className)}>
+      <body className={cn("w-full h-screen", inter.className)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -28,7 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          {children}
+          <main className="h-full w-full">{children}</main>
         </ThemeProvider>
       </body>
     </html>
