@@ -60,7 +60,7 @@ function PersonalJourney() {
         <h2 className="text-xl p-2">Trajeto</h2>
       </div>
 
-      <div className="m-auto bg-zinc-200/60 dark:bg-zinc-800/60 h-1 flex items-center justify-around gap-4 w-full">
+      <div className="m-auto bg-zinc-200/60 dark:bg-zinc-800/60 min-h-full flex flex-col flex-1 justify-around md:flex-row md:w-full md:h-[4px] md:flex-none">
         {data.map(({ color, date, description, title, year, position, id }) => {
           return (
             <TimeCard

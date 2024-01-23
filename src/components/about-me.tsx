@@ -9,13 +9,13 @@ function AboutMe() {
           <Image
             alt="Foto pessoal de perfil"
             src={"/perfil.jpg"}
-            width={400}
-            height={400}
-            className="rounded-md"
+            width={300}
+            height={300}
+            className="rounded-md max-w-xs"
           />
         </div>
 
-        <div className="flex flex-col gap-2 max-w-md">
+        <div className="flex flex-col gap-2 max-w-md px-4">
           <h1 className="text-base font-semibold">
             Olá, me chamo Bruno Azevedo.
           </h1>

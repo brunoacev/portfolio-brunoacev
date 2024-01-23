@@ -21,8 +21,10 @@ function TimeCard({ color, position, data }: Card) {
         className={cn(
           "bg-zinc-200/50 dark:bg-zinc-700/30 p-2 rounded-md absolute left-5",
           {
-            ["top-[-45px]"]: position == "top",
-            ["bottom-[-45px]"]: position == "bottom",
+            ["top-[-10px] left-[-70px] md:top-[-50px] md:left-2"]:
+              position == "top",
+            ["bottom-[-15px] md:bottom-[-50px] md:left-4"]:
+              position == "bottom",
           }
         )}
       >
