@@ -24,7 +24,11 @@ function Navigation() {
       <ul className="hidden sm:flex gap-4 items-center">
         {navItems.map(({ id, title, url }) => (
           <li key={id}>
-            <Link href={url} className="text-sm hover:underline">
+            <Link
+              href={url}
+              target="_blank"
+              className="text-sm hover:underline"
+            >
               {title}
             </Link>
           </li>

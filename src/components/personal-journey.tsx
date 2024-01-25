@@ -8,12 +8,33 @@ const data = [
     description:
       "Aprovado para participar do projeto ONE em parceria com a Alura, uma das maiores escolas tech do país para desenvolvimento de novos talentos na programação. ",
     year: "2024",
-    date: "Fevereiro de 2024 - Fevereiro de 2025 ",
+    date: "Janeiro de 2024 - Atualmente",
     position: "top",
     color: "bg-blue-500",
   },
   {
     id: 2,
+    title: "Go - Full Cycle",
+    description:
+      "Aprendendo uma nova stack de tecnologia e seu ecossistema. Go, também conhecida como Golang é uma linguagem de programação de código aberto projetada para ser eficiente, desenvolvida pela Google.",
+    year: "2023",
+    date: "Outubro de 2023 - Atualmente",
+    position: "bottom",
+    color: "bg-blue-500",
+  },
+  {
+    id: 3,
+    title: "Arquiteto de Soluções - Amazon Web Services (AWS) - CA",
+    description:
+      "Aprendendo uma nova stack de tecnologia e seu ecossistema. Go, também conhecida como Golang é uma linguagem de programação de código aberto projetada para ser eficiente, desenvolvida pela Google.",
+    year: "2023",
+    date: "Agosto de 2023 - Atualmente",
+    position: "top",
+    color: "bg-blue-500",
+  },
+
+  {
+    id: 4,
     title: "Desenvolvedor Full Stack - Kenzie Academy Brasil",
     description:
       "Formação concluida em uma das maiores escolas do brasil em ensino de tecnologia, utilizando Javascript e Python e seus ecossistemas.",
@@ -23,17 +44,17 @@ const data = [
     color: "bg-yellow-200",
   },
   {
-    id: 3,
-    title: "ITech 2022 - Projeto MF ADV",
+    id: 5,
+    title: "Engenharia de Software - UNIFCV",
     description:
-      "Plataforma para gerenciamento de atividades no setor de advocacia em colaboração com as empresas Meireles e Freitas Digital, MF Advocacia e Scio Tech. Para mais informações acesse a opção projetos no menu de navegação.",
+      "Procuro ter uma formação sólida para entregar análise de requisitos, design de software, codificação eficiente e a realização de testes rigorosos para garantir a qualidade e robustez das soluções que desenvolvo.",
     year: "2022",
-    date: "Dezembro de 2021 - Maio de 2022",
+    date: "Agosto de 2022 - Agosto de 2026",
     position: "top",
-    color: "bg-yellow-200",
+    color: "bg-blue-500",
   },
   {
-    id: 4,
+    id: 6,
     title: "Operador de Telemarketing - Meireles e Freitas Digital",
     description: "Atendimento sac e cobrança para empresas parceiras.",
     year: "2022",
@@ -42,7 +63,7 @@ const data = [
     color: "bg-yellow-200",
   },
   {
-    id: 5,
+    id: 7,
     title: "Operador de Estacionamento - Ancar Nordeste LTDA",
     description:
       "Orientador interno sobre o funcionamento das atividades realizadas dos shoppings administrados pela Ancar Nordeste, Promoções para Operador de Caixa e Atendimento Central ao Público, Folguista de Supervisão diurno e noturno.",
