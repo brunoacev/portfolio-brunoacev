@@ -33,7 +33,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          <main className="h-full w-full">{children}</main>
+          {children}
         </ThemeProvider>
       </body>
     </html>
