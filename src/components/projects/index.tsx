@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { SectionContent } from "./section-content";
-import { SectionHeader } from "./section-header";
+import { SectionContent } from "../section-content";
+import { SectionHeader } from "../section-header";
 import { projectContentData } from "@/database/project-content-database";
 import { CalendarIcon } from "lucide-react";
 

@@ -1,4 +1,4 @@
-import { SectionHeader } from "./section-header";
+import { SectionHeader } from "../section-header";
 import {
   Card,
   CardContent,
@@ -16,9 +16,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { SectionContent } from "./section-content";
-import { Button } from "./ui/button";
-import { Textarea } from "./ui/textarea";
+import { SectionContent } from "../section-content";
+import { Button } from "../ui/button";
+import { Textarea } from "../ui/textarea";
 
 function Contact() {
   return (

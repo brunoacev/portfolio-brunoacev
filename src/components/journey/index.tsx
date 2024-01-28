@@ -1,9 +1,9 @@
 import { journeyContentData } from "@/database/journey-content-database";
-import { SectionCard } from "./section-card";
-import { SectionContent } from "./section-content";
-import { SectionAnotation } from "./section-anotations";
-import { SectionHeader } from "./section-header";
-import { Ping } from "./ping";
+import { SectionHeader } from "../section-header";
+import { SectionAnotation } from "../section-anotations";
+import { Ping } from "../ping";
+import { SectionContent } from "../section-content";
+import { SectionCard } from "../section-card";
 
 function Journey() {
   return (
