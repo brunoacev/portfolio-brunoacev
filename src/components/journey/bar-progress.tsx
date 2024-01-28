@@ -5,8 +5,8 @@ import { Ping } from "../ui/ping";
 
 function BarProgress() {
   return (
-    <Section.Box>
-      <div className="bg-zinc-200/60 dark:bg-zinc-800 w-fit rounded-full p-1.5 md:w-full">
+    <Section.Box className="flex md:flex-col">
+      <div className="bg-zinc-200/60 dark:bg-zinc-800 w-fit h-full  rounded-full p-1.5 md:w-full">
         <div
           className={cn("p-1 h-[55%] bg-green-500 rounded-full md:w-[55%]")}
         />
