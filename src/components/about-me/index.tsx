@@ -20,7 +20,7 @@ function AboutMe() {
             Olá, me chamo Bruno Azevedo.
           </h1>
           <p>
-            Desenvolvedor entusisamado em criar soluções utilizando tecnologias
+            Desenvolvedor entusiasmado em criar soluções utilizando tecnologias
             e seus ecossistemas como Go, Rust, Javascript e Python!
           </p>
           <span className="border-b py-1">
