@@ -20,7 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={cn("w-full h-screen", inter.className)}>
+      <body
+        className={cn(
+          "w-full h-screen bg-zinc-100 dark:bg-zinc-900",
+          inter.className
+        )}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

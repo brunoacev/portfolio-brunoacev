@@ -4,7 +4,7 @@ import Link from "next/link";
 function AboutMe() {
   return (
     <section className="w-full min-h-full grid place-items-center">
-      <div className="flex flex-col items-center w-fit gap-10 text-xs sm:text-sm tracking-wide md:flex-row">
+      <div className="flex flex-col items-center w-fit gap-10 text-sm tracking-wide md:flex-row">
         <div className="h-fit p-4">
           <Image
             alt="Foto pessoal de perfil"
