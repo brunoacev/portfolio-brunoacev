@@ -1,15 +1,14 @@
 import Link from "next/link";
-import { SectionContent } from "../section-content";
-import { SectionHeader } from "../section-header";
 import { projectContentData } from "@/database/project-content-database";
 import { CalendarIcon } from "lucide-react";
+import { Section } from "../section-wrapper";
 
 function Projects() {
   return (
-    <section className="flex flex-col gap-10 min-h-full dark:bg-zinc-700/10 p-4">
-      <SectionHeader>Projetos</SectionHeader>
+    <Section.Wrapper>
+      <Section.Header>Projetos</Section.Header>
 
-      <SectionContent className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <Section.Content className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {projectContentData.map((item) => (
           <div
             key={item.id}
@@ -43,8 +42,8 @@ function Projects() {
             </Link>
           </div>
         ))}
-      </SectionContent>
-    </section>
+      </Section.Content>
+    </Section.Wrapper>
   );
 }
 

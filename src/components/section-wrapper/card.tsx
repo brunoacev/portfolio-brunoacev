@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Ping } from "../ping";
+import { Ping } from "../ui/ping";
 import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
 
@@ -18,7 +18,7 @@ function Card({ content }: { content: Card }) {
   return (
     <div
       className={cn(
-        "w-full max-w-sm md:h-72 p-4 rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col gap-4 ",
+        "w-full max-w-sm md:h-72 p-4 dark:border-l border:border-t rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col gap-4 ",
         content.className
       )}
     >

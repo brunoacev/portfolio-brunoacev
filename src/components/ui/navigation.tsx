@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ToggleTheme } from "./ui/toggle-theme";
-import { MobileMenu } from "./ui/mobile-menu";
+import { ToggleTheme } from "./toggle-theme";
+import { MobileMenu } from "./mobile-menu";
 
 const navItems = [
   { id: 1, title: "Blog", url: "/blog" },
@@ -10,7 +10,6 @@ const navItems = [
     title: "Linkedin",
     url: "https://www.linkedin.com/in/bruno-azevedo-02736bb2/",
   },
-  { id: 4, title: "Projetos", url: "/projects" },
 ];
 
 function Navigation() {

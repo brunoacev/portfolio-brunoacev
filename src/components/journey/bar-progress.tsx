@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Section } from "@/components/section-wrapper";
 import { journeyContentData } from "@/database/journey-content-database";
-import { Ping } from "../ping";
+import { Ping } from "../ui/ping";
 
 function BarProgress() {
   return (

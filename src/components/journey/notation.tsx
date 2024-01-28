@@ -1,4 +1,4 @@
-import { Ping } from "../ping";
+import { Ping } from "../ui/ping";
 
 function Notation() {
   return (
