@@ -20,8 +20,8 @@ function AboutMe() {
             Olá, me chamo Bruno Azevedo.
           </h1>
           <p>
-            Desenvolvedor entusiamado em criar soluções utilizando tecnologias e
-            seus ecossistemas como Go, Rust, Javascript e Python!
+            Desenvolvedor entusisamado em criar soluções utilizando tecnologias
+            e seus ecossistemas como Go, Rust, Javascript e Python!
           </p>
           <span className="border-b py-1">
             Nesse portfolio você vai entender mais sobre:

@@ -4,13 +4,13 @@ import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
 
 type Card = {
-  id: string;
-  color: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  year: number;
-  date: string;
+  id?: string;
+  color?: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  year?: number;
+  date?: string;
   className?: string;
 };
 
@@ -23,7 +23,10 @@ function SectionCard({
   subtitle,
   year,
 }: Card) {
-  const dateSplite = date.split("-");
+  const dateSplite = date?.split("-");
+
+  if (!dateSplite) return null;
+  
   return (
     <div
       className={cn(
