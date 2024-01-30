@@ -15,6 +15,7 @@ function ContactForm() {
             name="name"
             placeholder="Nome do responsável"
             className="dark:bg-zinc-700"
+            required
           />
         </div>
         <div className="flex flex-col space-y-1.5">
@@ -24,6 +25,7 @@ function ContactForm() {
             name="email"
             placeholder="Email para contato"
             className="dark:bg-zinc-700"
+            required
           />
         </div>
         <div className="flex flex-col space-y-1.5">
@@ -33,6 +35,7 @@ function ContactForm() {
             name="title"
             placeholder="Titulo do conteúdo"
             className="dark:bg-zinc-700"
+            required
           />
         </div>
 
@@ -43,6 +46,7 @@ function ContactForm() {
             name="description"
             placeholder="Escreva uma breve descrição sobre seu projeto ou proposta."
             className="dark:bg-zinc-700"
+            required
           />
         </div>
         <div className="flex justify-end">

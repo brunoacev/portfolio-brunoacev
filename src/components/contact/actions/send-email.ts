@@ -1,12 +1,17 @@
 "use server";
 
-function SendEmailAction(data: FormData) {
-  const name = data.get("name");
-  const email = data.get("email");
-  const title = data.get("title");
-  const description = data.get("description");
+import { ContactSchema } from "@/schemas/form-schema";
 
-  console.log({ name, email, title, description });
+function SendEmailAction(data: FormData) {
+  const rawData = {
+    name: data.get("name"),
+    email: data.get("email"),
+    title: data.get("title"),
+    description: data.get("description"),
+  };
+
+  const safeData = ContactSchema.safeParse(rawData);
+  console.log({ safeData });
 }
 
 export { SendEmailAction };
