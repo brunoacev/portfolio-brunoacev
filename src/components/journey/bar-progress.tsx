@@ -5,8 +5,8 @@ import { Ping } from "../ui/ping";
 
 function BarProgress() {
   return (
-    <Section.Box className="flex md:flex-col">
-      <div className="bg-zinc-200/60 dark:bg-zinc-800 w-fit h-full  rounded-full p-1.5 md:w-full">
+    <Section.Box className="flex md:flex-col md:gap-2">
+      <div className="bg-zinc-200/60 dark:bg-zinc-800/50 w-fit h-full  rounded-full p-1.5 md:w-full">
         <div
           className={cn("p-1 h-[55%] bg-green-500 rounded-full md:w-[55%]")}
         />
@@ -15,7 +15,7 @@ function BarProgress() {
         {journeyContentData.map((item, idx) => (
           <Section.Box
             key={idx}
-            className="flex items-center gap-2 p-2 rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none"
+            className="flex items-center gap-2 p-2 rounded-md dark:bg-zinc-800 bg-white text-popover-foreground shadow-md outline-none"
           >
             <Ping color={item.color} />
             <span>{item.year}</span>

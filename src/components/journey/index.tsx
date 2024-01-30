@@ -8,7 +8,7 @@ function Journey() {
     <Section.Wrapper>
       <Section.Header>Trajeto</Section.Header>
       <Notation />
-      <Section.Content className="flex h-full gap-4 md:flex-col">
+      <Section.Content className="flex h-full gap-8 md:flex-col">
         <Section.Box className="flex min-h-full gap-1 md:flex-col md:w-full">
           <BarProgress />
         </Section.Box>
