@@ -12,30 +12,39 @@ type Project = {
 const projectContentData: Project[] = [
   {
     id: randomUUID(),
-    title: "MF ADV",
-    subtitle: "Meireles e Freitas Advocacia",
+    title: "Encriptação de mensagens",
+    subtitle: "Alura + ONE - Oracle Next Education",
     description:
-      "Descrição sobre o projeto com proposito de desenvolver um ambiente de trabalho voltado para leitura de estatisticas, graficos e controle de casos.",
-    url: "/projects/mf-adv",
-    date: "Janeiro de 2023 - Fevereiro de 2023",
+      "Primeiro challenger oferecido pela Alura em parceiria com a Oracle, projeto simples de encriptação e decodificação e mensagens utilizando conceitos básicos de lógica de programação.",
+    url: "https://challenge-alura-brunoacev.vercel.app/",
+    date: "Janeiro de 2023",
+  },
+  {
+    id: randomUUID(),
+    title: "War Games",
+    subtitle: "Private Cabal Server",
+    description:
+      "Servidor privado MMORPG, Classic Cabal Game and Free To Play. Projeto esta em desenvolvimento, com data de lançamento para Julho 2024.",
+    url: "https://war-games.vercel.app/",
+    date: "Atualmente",
   },
   {
     id: randomUUID(),
     title: "MF ADV",
     subtitle: "Meireles e Freitas Advocacia",
     description:
-      "Descrição sobre o projeto com proposito de desenvolver um ambiente de trabalho voltado para leitura de estatisticas, graficos e controle de casos.",
-    url: "/projects/mf-adv",
-    date: "Janeiro de 2023 - Fevereiro de 2023",
+      "Plataforma privada para gerenciamento de dados jurídicos, com acesso a gráficos detalhados, leitura de banco de dados de clientes interno e relátorios de acompanhamento semanal, mensal, semestral e anual.",
+    url: "/",
+    date: "Atualmente",
   },
   {
     id: randomUUID(),
-    title: "MF ADV",
-    subtitle: "Meireles e Freitas Advocacia",
+    title: "V1 Talk-Edge",
+    subtitle: "Scio TECH",
     description:
-      "Descrição sobre o projeto com proposito de desenvolver um ambiente de trabalho voltado para leitura de estatisticas, graficos e controle de casos.",
-    url: "/projects/mf-adv",
-    date: "Janeiro de 2023 - Fevereiro de 2023",
+      "Ecossistema empresarial para o setor de atendimento digital, fornecendo maior flexibilidade no acompanhamento de dados de clientes interno, designer intuitivo e ambiente para desenvolvimento profissional.",
+    url: "/",
+    date: "Atualmente",
   },
 ];
 

@@ -12,7 +12,7 @@ function Projects() {
         {projectContentData.map((item) => (
           <div
             key={item.id}
-            className="w-full max-w-sm h-60 sm:h-64 p-4 rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col justify-between"
+            className="w-full max-w-sm h-60 sm:h-64 p-4 rounded-md dark:border-l dark:border-t dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col justify-between"
           >
             <div className="flex flex-col gap-1">
               <h4 className="text-sm font-semibold capitalize">{item.title}</h4>
@@ -24,21 +24,19 @@ function Projects() {
               {item.description}
             </p>
             <div className="flex flex-col gap-2 items-start">
-              <div className="flex items-center gap-1">
-                <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />
-                <span className="text-xs text-muted-foreground">
-                  {item.date.split("-")[0]}
-                </span>
-              </div>
-              <div className="flex items-center gap-1">
-                <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />
-                <span className="text-xs text-muted-foreground">
-                  {item.date.split("-")[1]}
-                </span>
-              </div>
+              {item.date.split("-").map((item, idx) => (
+                <div className="flex items-center gap-1" key={idx}>
+                  <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />
+                  <span className="text-xs text-muted-foreground">{item}</span>
+                </div>
+              ))}
             </div>
-            <Link href={item.url} className="text-sm hover:underline">
-              Veja mais sobre
+            <Link
+              href={item.url}
+              target="_blank"
+              className="text-sm hover:underline"
+            >
+              Acesse o projeto
             </Link>
           </div>
         ))}
