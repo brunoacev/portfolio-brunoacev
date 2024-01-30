@@ -25,7 +25,7 @@ function Navigation() {
           <li key={id}>
             <Link
               href={url}
-              target="_blank"
+              target={url === "/blog" ? "_self" : "_blank"}
               className="text-sm hover:underline"
             >
               {title}
