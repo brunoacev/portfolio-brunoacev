@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projectContentData } from "@/database/project-content-database";
 import { CalendarIcon } from "lucide-react";
 import { Section } from "../section-wrapper";
+import Image from "next/image";
 
 function Projects() {
   return (
@@ -12,8 +13,17 @@ function Projects() {
         {projectContentData.map((item) => (
           <div
             key={item.id}
-            className="w-full max-w-sm h-60 sm:h-64 p-4 rounded-md dark:border-l dark:border-t dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col justify-between"
+            className="w-full max-w-sm h-96 sm:h-96 p-4 rounded-md dark:border-l dark:border-t dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col justify-between"
           >
+            <div className="w-full max-w-sm">
+              <Image
+                alt="Logo da empresa"
+                src={item.image}
+                width={300}
+                height={300}
+                className="object-fill rounded-md"
+              />
+            </div>
             <div className="flex flex-col gap-1">
               <h4 className="text-sm font-semibold capitalize">{item.title}</h4>
               <h4 className="text-sm font-semibold capitalize">
