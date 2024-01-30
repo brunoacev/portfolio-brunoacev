@@ -4,37 +4,27 @@ import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
 export function ToggleTheme() {
-  const { setTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
+
+  const handleToggle = () => {
+    theme === "system" && setTheme("light");
+    theme === "light" && setTheme("dark");
+    theme === "dark" && setTheme("light");
+    setIsOpen(!isOpen);
+  };
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon" className="h-fit w-fit p-2">
-          <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-          <span className="sr-only">Toggle theme</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
-          Light
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
-          Dark
-        </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
-          System
-        </DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div
+      className="dark:bg-zinc-700 bg-zinc-200 hover:bg-zinc-300 transition-all duration-300 ease-in-out p-2 rounded-sm"
+      onClick={handleToggle}
+    >
+      {isOpen ? (
+        <Sun className="h-4 w-4 hover:cursor-pointer" />
+      ) : (
+        <Moon className="h-4 w-4 hover:cursor-pointer" />
+      )}
+    </div>
   );
 }
