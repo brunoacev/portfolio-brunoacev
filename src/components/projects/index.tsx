@@ -15,7 +15,7 @@ function Projects() {
             key={item.id}
             className="w-full max-w-sm h-96 sm:h-96 p-4 rounded-md dark:border-l dark:border-t dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col justify-between"
           >
-            <div className="w-full max-w-sm">
+            <div className="w-full max-w-sm flex items-center justify-center h-fit">
               <Image
                 alt="Logo da empresa"
                 src={item.image}
