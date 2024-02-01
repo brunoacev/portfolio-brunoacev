@@ -12,7 +12,9 @@ function Journey() {
         <Section.Box className="flex min-h-full gap-1 md:flex-col md:w-full">
           <BarProgress />
         </Section.Box>
-        <Cards />
+        <Section.Box className="border-2 p-4 rounded-md">
+          <Cards />
+        </Section.Box>
       </Section.Content>
     </Section.Wrapper>
   );
