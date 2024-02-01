@@ -17,7 +17,6 @@ const navItems = [
     title: "Linkedin",
     url: "https://www.linkedin.com/in/bruno-azevedo-02736bb2/",
   },
-  { id: 4, title: "Projetos", url: "/projects" },
 ];
 
 function MobileMenu() {
