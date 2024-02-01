@@ -1,4 +1,4 @@
-import { Post } from "@/components/posts";
+import { PostsContent } from "@/components/posts";
 import { Posts } from "@/database/posts-content-database";
 
 export default function BlogPage() {
@@ -8,15 +8,15 @@ export default function BlogPage() {
         <h1 className="text-2xl md:text-4xl font-bold">
           Explore os ultimos updates
         </h1>
-        <p className="text-sm font-semibold dark:text-zinc-400">
-          Espero poder colaborar com informações sobre esse imenso universo que
-          é tecnologia.
+        <p className="text-sm font-semibold text-zinc-600 dark:text-zinc-400">
+          Estou ansioso para compartilhar insights e informações fascinantes
+          sobre o vasto mundo da tecnologia neste espaço dedicado ao blog.
         </p>
       </section>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         {Posts.map((item, idx) => (
-          <Post data={item} key={idx} />
+          <PostsContent data={item} key={idx} />
         ))}
       </section>
     </main>
