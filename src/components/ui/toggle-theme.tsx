@@ -17,7 +17,7 @@ export function ToggleTheme() {
 
   return (
     <div
-      className="dark:bg-zinc-700 bg-zinc-200 hover:bg-zinc-300 transition-all duration-300 ease-in-out p-2 rounded-sm"
+      className="dark:bg-zinc-700 w-fit bg-zinc-200 hover:bg-zinc-300 transition-all duration-300 ease-in-out p-2 rounded-sm"
       onClick={handleToggle}
     >
       {isOpen ? (
