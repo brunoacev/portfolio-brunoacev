@@ -6,7 +6,7 @@ function PostsContent({ data }: { data: Post }) {
   return (
     <Link
       href={data.slugUrl}
-      className="border rounded-md p-4 w-fit h-full flex flex-col justify-start gap-4 hover:cursor-pointer bg-white dark:bg-transparent hover:bg-zinc-200 dark:hover:bg-zinc-700/30 transition-all duration-300 ease-in-out md:max-w-md"
+      className="border rounded-md p-4 w-fit h-full md:max-w-xs flex flex-col justify-start gap-4 hover:cursor-pointer bg-white dark:bg-transparent hover:bg-zinc-200 dark:hover:bg-zinc-700/30 transition-all duration-300 ease-in-out"
     >
       <Image
         alt="Imagem alternativa sobre o conteudo"
@@ -17,7 +17,7 @@ function PostsContent({ data }: { data: Post }) {
       <div className="flex flex-col gap-4 justify-between  h-full">
         <div className="flex flex-col gap-2">
           <h1 className="text-xl font-bold">{data.title}</h1>
-          <p className="text-sm tracking-wide text-zinc-500 font-semibold">
+          <p className="text-xs tracking-wide text-zinc-500 font-semibold">
             {data.subTitle}
           </p>
 
