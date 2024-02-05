@@ -1,42 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { Posts } from "@/database/posts-content-database";
 import { ChevronLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
 import { cn } from "@/lib/utils";
-
-function getPost({ slug }: { slug: string }) {
-  return Posts.find((item) => item.slugUrl.split("/").pop() === slug);
-}
+import { getPost } from "@/lib/posts";
+import { NotFound } from "@/components/not-found";
 
 export default function DynamicBlog() {
-  const slug = usePathname().split("/").pop();
-
-  if (!slug) {
-    return (
-      <Suspense fallback={<p>Loading feed...</p>}>
-        <main className="w-full h-full p-4">
-          <Link
-            href={"/blog"}
-            className="flex items-center gap-2 w-fit px-2 py-2 border rounded-md dark:bg-zinc-800 dark:hover:bg-zinc-700 transition-all duration-300 ease-in-out"
-          >
-            <ChevronLeft className="w-5 h-5" />
-            <span>Voltar</span>
-          </Link>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Perspiciatis totam, excepturi eaque quae consequuntur eius
-            voluptatibus repudiandae tempora iste odit.
-          </p>
-        </main>
-      </Suspense>
-    );
-  }
-
+  const slug = usePathname().split("/").pop() || "not-found";
   const post = getPost({ slug });
+
+  if (!post) {
+    return <NotFound />;
+  }
 
   return (
     <Suspense fallback={<p>Loading feed...</p>}>
