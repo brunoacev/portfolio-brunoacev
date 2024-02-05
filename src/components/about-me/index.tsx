@@ -34,7 +34,7 @@ function AboutMe() {
                 blog pessoal.
               </Link>
             </li>
-            <li>Projetos com documentações e participações.</li>
+            <li>Projetos e participações.</li>
           </ul>
         </div>
       </div>
