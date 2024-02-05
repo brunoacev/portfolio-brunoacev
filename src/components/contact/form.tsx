@@ -13,7 +13,7 @@ const initialState = {
   status: 0,
 };
 
-function ContactForm() {
+function Form() {
   const [state, action] = useFormState(SendEmailAction, initialState);
 
   return (
@@ -79,4 +79,4 @@ function ContactForm() {
   );
 }
 
-export { ContactForm };
+export { Form };

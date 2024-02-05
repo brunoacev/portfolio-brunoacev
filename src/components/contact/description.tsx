@@ -1,4 +1,4 @@
-function FormDescription() {
+function Description() {
   return (
     <div className="flex flex-col gap-2">
       <h3 className="text-xl font-semibold">Contato</h3>
@@ -10,4 +10,4 @@ function FormDescription() {
   );
 }
 
-export { FormDescription };
+export { Description };

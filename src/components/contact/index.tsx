@@ -1,7 +1,7 @@
 import { Section } from "../section-wrapper";
-import { ContactForm } from "./form";
+import { Form } from "./form";
 
-import { FormDescription } from "./description";
+import { Description } from "./description";
 import { FormWrapper } from "./wrapper";
 
 function Contact() {
@@ -11,8 +11,8 @@ function Contact() {
 
       <Section.Content className="m-auto">
         <FormWrapper>
-          <FormDescription />
-          <ContactForm />
+          <Description />
+          <Form />
         </FormWrapper>
       </Section.Content>
     </Section.Wrapper>
