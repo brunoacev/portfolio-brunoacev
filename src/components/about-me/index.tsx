@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Section } from "../section-wrapper";
 
 function AboutMe() {
   return (
-    <section className="w-full min-h-full grid place-items-center">
-      <div className="flex flex-col items-center w-fit gap-10 text-sm tracking-wide md:flex-row">
-        <div className="h-fit p-4">
+    <Section.Wrapper className="w-full min-h-full grid place-items-center">
+      <Section.Content className="flex flex-col items-center w-fit gap-10 text-sm tracking-wide md:flex-row">
+        <Section.Box className="h-fit p-4">
           <Image
             alt="Foto pessoal de perfil"
             src={"/perfil.jpg"}
@@ -13,9 +14,9 @@ function AboutMe() {
             height={300}
             className="rounded-md max-w-xs"
           />
-        </div>
+        </Section.Box>
 
-        <div className="flex flex-col gap-2 max-w-md px-4">
+        <Section.Box className="flex flex-col gap-2 max-w-md px-4">
           <h1 className="text-base font-semibold">
             Olá, me chamo Bruno Azevedo.
           </h1>
@@ -36,9 +37,9 @@ function AboutMe() {
             </li>
             <li>Projetos e participações.</li>
           </ul>
-        </div>
-      </div>
-    </section>
+        </Section.Box>
+      </Section.Content>
+    </Section.Wrapper>
   );
 }
 
