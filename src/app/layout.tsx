@@ -8,9 +8,9 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bruno Azevedo",
+  title: "Bruno Acev FullStack Develop",
   description:
-    "Sou um desenvolvedor apaixonado, destaco minha adaptabilidade a novas tecnologias e dedicação ao aprendizado contínuo. Nesse Portfolio descubra mais sobre minha jornada!",
+    "Desenvolvedor entusiasmado em criar soluções utilizando tecnologias e seus ecossistemas como Go, Rust, Javascript e Python!",
 };
 
 export default function RootLayout({
