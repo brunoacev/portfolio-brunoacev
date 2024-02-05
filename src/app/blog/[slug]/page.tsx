@@ -9,15 +9,14 @@ import { getPost } from "@/lib/posts";
 import { NotFound } from "@/components/not-found";
 
 export default function DynamicBlog() {
-  const slug = usePathname().split("/").pop() || "not-found";
-  const post = getPost({ slug });
+  const post = getPost({ slug: usePathname().split("/").pop() || "not-found" });
 
   if (!post) {
     return <NotFound />;
   }
 
   return (
-    <Suspense fallback={<p>Loading feed...</p>}>
+    <Suspense fallback={<p>Carregando conteúdo...</p>}>
       <main className="w-full min-h-full p-4 flex flex-col gap-6">
         <Link
           href={"/blog"}
@@ -34,12 +33,12 @@ export default function DynamicBlog() {
                 {post?.title}
               </h1>
               <div
-                className={cn("grid grid-cols-1 gap-4", {
+                className={cn("grid grid-cols-1 md:grid-cols-2 gap-4", {
                   ["grid-rows-1"]: post?.content.length === 1,
                   ["grid-rows-2"]: post?.content.length === 2,
                   ["grid-rows-3"]: post?.content.length === 3,
                   ["grid-rows-4"]: post?.content.length === 4,
-                  ["grid-rows-5"]: post?.content.length === 5,
+                  ["grid-rows-5"]: post?.content.length >= 5,
                 })}
               >
                 {post?.content.map((item, idx) => (
@@ -58,17 +57,17 @@ export default function DynamicBlog() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <span>Referências</span>
+              <span className="font-semibold">Referências</span>
 
               <div className="flex flex-col gap-2">
                 {post?.refs.map((item, idx) => (
                   <Link
                     href={item.url}
+                    target="_blank"
                     key={idx}
-                    className="flex items-center gap-2 hover:cursor-pointer text-sm transition-all duration-300 ease-in-out"
+                    className="flex w-fit items-center gap-2 hover:cursor-pointer text-sm transition-all duration-300 ease-in-out"
                   >
-                    <span>Link: </span>
-                    <span className="hover:underline text-blue-900 dark:text-blue-600 font-semibold">
+                    <span className="hover:underline hover:text-blue-700 transition-all duration-200 ease-in-out font-semibold">
                       {item.title}
                     </span>
                   </Link>
