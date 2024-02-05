@@ -1,8 +1,8 @@
-import { Post } from "@/database/posts-content-database";
+import { PostType } from "@/database/posts-content-database";
 import Image from "next/image";
 import Link from "next/link";
 
-function PostsContent({ data }: { data: Post }) {
+function Post({ data }: { data: PostType }) {
   return (
     <Link
       href={data.slugUrl}
@@ -51,4 +51,4 @@ function PostsContent({ data }: { data: Post }) {
     </Link>
   );
 }
-export { PostsContent };
+export { Post };

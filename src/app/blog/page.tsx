@@ -1,5 +1,5 @@
-import { PostsContent } from "@/components/posts";
-import { Posts } from "@/database/posts-content-database";
+import { Post } from "@/components/post";
+import { PostsData } from "@/database/posts-content-database";
 
 export default function BlogPage() {
   return (
@@ -19,8 +19,8 @@ export default function BlogPage() {
       </section>
 
       <section className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {Posts.map((item, idx) => (
-          <PostsContent data={item} key={idx} />
+        {PostsData.map((item, idx) => (
+          <Post data={item} key={idx} />
         ))}
       </section>
     </main>

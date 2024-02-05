@@ -15,7 +15,7 @@ type User = {
   year: string;
 };
 
-type Post = {
+type PostType = {
   id: string;
   title: string;
   subTitle: string;
@@ -27,7 +27,7 @@ type Post = {
   user: User;
 };
 
-const Posts: Post[] = [
+const PostsData: PostType[] = [
   {
     id: "1",
     title: "Introdução ao Javascript",
@@ -95,4 +95,4 @@ const Posts: Post[] = [
   },
 ];
 
-export { Posts, type Post };
+export { PostsData, type PostType };
