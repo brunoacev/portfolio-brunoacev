@@ -31,25 +31,16 @@ const projectContentData: Project[] = [
     date: "Atualmente",
     image: "/logos/wargames.png",
   },
+
   {
     id: randomUUID(),
-    title: "MF ADV",
-    subtitle: "Meireles e Freitas Advocacia",
-    description:
-      "Plataforma privada para gerenciamento de dados jurídicos, com acesso a gráficos detalhados, leitura de banco de dados de clientes interno e relátorios de acompanhamento semanal, mensal, semestral e anual.",
-    urlToPreview: "/",
-    date: "Atualmente",
-    image: "/logos/adv.png",
-  },
-  {
-    id: randomUUID(),
-    title: "V1 Talk-Edge",
-    subtitle: "Scio TECH",
+    title: "Talk-Edge",
+    subtitle: "Projeto Pessoal",
     description:
       "Ecossistema empresarial para o setor de atendimento digital, fornecendo maior flexibilidade no acompanhamento de dados de clientes interno, designer intuitivo e ambiente para desenvolvimento profissional.",
-    urlToPreview: "/",
+    urlToPreview: "https://talk-edge.vercel.app/",
     date: "Atualmente",
-    image: "/logos/scio.png",
+    image: "/svgs/personal-project.svg",
   },
 ];
 
