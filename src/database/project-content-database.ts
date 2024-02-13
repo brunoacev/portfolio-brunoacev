@@ -1,5 +1,3 @@
-import { randomUUID } from "crypto";
-
 type Project = {
   id: string;
   title: string;
@@ -12,7 +10,7 @@ type Project = {
 
 const projectContentData: Project[] = [
   {
-    id: randomUUID(),
+    id: "01",
     title: "Encriptação de mensagens",
     subtitle: "Alura + ONE - Oracle Next Education",
     description:
@@ -22,7 +20,7 @@ const projectContentData: Project[] = [
     image: "/logos/alura.png",
   },
   {
-    id: randomUUID(),
+    id: "02",
     title: "War Games",
     subtitle: "Private Cabal Server",
     description:
@@ -33,7 +31,7 @@ const projectContentData: Project[] = [
   },
 
   {
-    id: randomUUID(),
+    id: "03",
     title: "Talk-Edge",
     subtitle: "Projeto Pessoal",
     description:
