@@ -42,7 +42,8 @@ async function SendEmailAction(initialState: any, formData: FormData) {
     }
 
     return {
-      message: "Algo está errado...",
+      message:
+        "No momento não foi possivel enviar sua mensagem mas já estou ciente desse ocorrido. Se possivel entre em contato pelo email: brunoacev@gmail.com ou tente novamente em outro momento!",
       status: 400,
     };
   }
