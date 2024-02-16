@@ -88,6 +88,16 @@ function Card(props: CardType) {
               </div>
             ))}
           </div>
+          <div className="flex flex-wrap gap-2">
+            {props.stack.map((item, idx) => (
+              <span
+                key={idx}
+                className="p-2 tracking-wider text-center text-xs dark:bg-zinc-600/20 rounded-md"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     );

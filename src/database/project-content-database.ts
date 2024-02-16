@@ -6,6 +6,7 @@ type Project = {
   date: string;
   urlToPreview: string;
   image: string;
+  stack: string[];
 };
 
 const projectContentData: Project[] = [
@@ -18,6 +19,7 @@ const projectContentData: Project[] = [
     urlToPreview: "https://challenge-alura-brunoacev.vercel.app/",
     date: "Janeiro de 2023",
     image: "/logos/alura.png",
+    stack: ["Vite", "Tailwind"],
   },
   {
     id: "02",
@@ -28,6 +30,7 @@ const projectContentData: Project[] = [
     urlToPreview: "https://war-games-demo.vercel.app/",
     date: "Atualmente",
     image: "/logos/wargames.png",
+    stack: ["NextJS", "Stripe", "Tailwind", "PostgreSQL", "Docker"],
   },
 
   {
@@ -39,6 +42,7 @@ const projectContentData: Project[] = [
     urlToPreview: "https://talk-edge.vercel.app/",
     date: "Atualmente",
     image: "/svgs/personal-project.svg",
+    stack: ["NextJS", "Tailwind", "PostgreSQL"],
   },
 ];
 

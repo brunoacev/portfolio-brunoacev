@@ -17,6 +17,7 @@ type ProjectCard = {
   type: "ProjectCard";
   image: string;
   urlToPreview: string;
+  stack: string[];
 };
 
 export type { CardType };
