@@ -21,10 +21,13 @@ function Form() {
       <div className="grid w-full items-center gap-4">
         {state.status !== 0 && (
           <span
-            className={cn("text-zinc-400 dark:text-zinc-600", {
-              ["text-green-500 dark:text-green-500"]: state.status === 200,
-              ["text-red-500 dark:text-red-500"]: state.status === 400,
-            })}
+            className={cn(
+              "text-zinc-400 dark:text-zinc-600 text-sm tracking-wide",
+              {
+                ["text-green-500 dark:text-green-500"]: state.status === 200,
+                ["text-red-500 dark:text-red-500"]: state.status === 400,
+              }
+            )}
           >
             {state.message}
           </span>
