@@ -32,18 +32,6 @@ const projectContentData: Project[] = [
     image: "/logos/wargames.png",
     stack: ["NextJS", "Stripe", "Tailwind", "PostgreSQL", "Docker"],
   },
-
-  {
-    id: "03",
-    title: "Talk-Edge",
-    subtitle: "Projeto Pessoal",
-    description:
-      "Ecossistema empresarial para o setor de atendimento digital, fornecendo maior flexibilidade no acompanhamento de dados de clientes interno, designer intuitivo e ambiente para desenvolvimento profissional.",
-    urlToPreview: "https://talk-edge.vercel.app/",
-    date: "Atualmente",
-    image: "/svgs/personal-project.svg",
-    stack: ["NextJS", "Tailwind", "PostgreSQL"],
-  },
 ];
 
 export { projectContentData };
