@@ -92,7 +92,7 @@ function Card(props: CardType) {
             {props.stack.map((item, idx) => (
               <span
                 key={idx}
-                className="p-2 tracking-wider text-center text-xs dark:bg-zinc-600/20 rounded-md"
+                className="p-2 tracking-wider text-center text-xs bg-zinc-100 dark:bg-zinc-600/20 rounded-md"
               >
                 {item}
               </span>
