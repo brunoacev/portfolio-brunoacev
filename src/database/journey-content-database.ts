@@ -18,7 +18,7 @@ const journeyContentData: DataContent[] = [
     description:
       "Guia interno sobre as operações nos shoppings geridos pela Ancar Nordeste, abrangendo promoções para Operador de Caixa, Atendimento Central ao Público, e oportunidades como Folguista de Supervisão em turnos diurnos e noturnos.",
     year: 2019,
-    date: "Abril de 2016 - Outubro de 2020",
+    date: "Abril de 2016 - Outubro de 2019",
     color: "bg-yellow-300",
   },
   {

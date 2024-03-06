@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Section } from "../section-wrapper";
+import { ExternalLink } from "lucide-react";
 
 function AboutMe() {
   return (
@@ -22,7 +23,10 @@ function AboutMe() {
           </h1>
           <p>
             Desenvolvedor entusiasmado em criar soluções utilizando tecnologias
-            e seus ecossistemas como Go, Rust, Javascript e Python!
+            como <span className="underline">Go</span>,{" "}
+            <span className="underline">Rust</span>,{" "}
+            <span className="underline">Javascript</span>,{" "}
+            <span className="underline">Python</span> e seus ecossistemas!
           </p>
           <span className="border-b py-1">
             Nesse portfolio você vai entender mais sobre:
@@ -31,8 +35,11 @@ function AboutMe() {
             <li>Trajeto educacional e profissional.</li>
             <li>
               Ideias e opiniões acessando meu{" "}
-              <Link href={"/blog"} className="underline">
-                blog pessoal.
+              <Link
+                href={"/blog"}
+                className="underline inline-flex items-center gap-1"
+              >
+                blog pessoal. <ExternalLink className="size-4" />
               </Link>
             </li>
             <li>Projetos e participações.</li>

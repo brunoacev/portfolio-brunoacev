@@ -26,11 +26,18 @@ const projectContentData: Project[] = [
     title: "War Games",
     subtitle: "Private Cabal Server",
     description:
-      "Servidor privado MMORPG, Classic Cabal Game and Free To Play. Projeto esta em desenvolvimento, com data de lançamento para Julho 2024.",
+      "Private server MMORPG, Classic Cabal Game and Free To Play. Projeto esta em periodo de desenvolvimento, com data de lançamento para Julho 2024.",
     urlToPreview: "https://war-games-demo.vercel.app/",
     date: "Atualmente",
     image: "/logos/wargames.png",
-    stack: ["NextJS", "Stripe", "Tailwind", "PostgreSQL", "Docker"],
+    stack: [
+      "Freelancer",
+      "NextJS",
+      "Stripe",
+      "Tailwind",
+      "PostgreSQL",
+      "Docker",
+    ],
   },
 ];
 
