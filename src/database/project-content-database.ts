@@ -1,33 +1,24 @@
 type Project = {
-  id: string;
+  id: number;
   title: string;
   subtitle: string;
   description: string;
   date: string;
   urlToPreview: string;
+  urlToGithub: string;
   image: string;
   stack: string[];
 };
 
 const projectContentData: Project[] = [
   {
-    id: "01",
-    title: "Encriptação de mensagens",
-    subtitle: "Alura + ONE - Oracle Next Education",
-    description:
-      "Primeiro challenger oferecido pela Alura em parceiria com a Oracle, projeto simples de encriptação e decodificação e mensagens utilizando conceitos básicos de lógica de programação.",
-    urlToPreview: "https://challenge-alura-brunoacev.vercel.app/",
-    date: "Janeiro de 2023",
-    image: "/logos/alura.png",
-    stack: ["Vite", "Tailwind"],
-  },
-  {
-    id: "02",
+    id: 1,
     title: "War Games",
     subtitle: "Private Cabal Server",
     description:
       "Private server MMORPG, Classic Cabal Game and Free To Play. Projeto esta em periodo de desenvolvimento, com data de lançamento para Julho 2024.",
     urlToPreview: "https://war-games-demo.vercel.app/",
+    urlToGithub: "https://github.com/brunoacev/war-games-demo",
     date: "Atualmente",
     image: "/logos/wargames.png",
     stack: [

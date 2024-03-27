@@ -62,13 +62,22 @@ function Card(props: CardType) {
             height={300}
             className="object-fill rounded-md"
           />
-          <Link
-            href={props.urlToPreview}
-            target="_blank"
-            className="text-sm hover:underline"
-          >
-            Acesse o projeto
-          </Link>
+          <div className="flex flex-col gap-1">
+            <Link
+              href={props.urlToPreview}
+              target="_blank"
+              className="text-sm hover:underline"
+            >
+              Acesse ao site
+            </Link>
+            <Link
+              href={props.urlToGithub}
+              target="_blank"
+              className="text-sm hover:underline"
+            >
+              Acesse ao github
+            </Link>
+          </div>
         </div>
         <div className="flex flex-col justify-between gap-4">
           <div className="flex flex-col gap-1">

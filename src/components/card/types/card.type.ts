@@ -1,5 +1,5 @@
 type CardType = {
-  id: string;
+  id: string | number;
   title: string;
   subtitle: string;
   description: string;
@@ -17,6 +17,7 @@ type ProjectCard = {
   type: "ProjectCard";
   image: string;
   urlToPreview: string;
+  urlToGithub: string;
   stack: string[];
 };
 
