@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Bruno Acev FullStack Develop",
+  title: "Bruno Azevedo | FullStack Develop",
   description:
     "Desenvolvedor entusiasmado em criar soluções utilizando tecnologias e seus ecossistemas como Go, Rust, Javascript e Python!",
 };

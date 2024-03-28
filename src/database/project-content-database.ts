@@ -19,7 +19,7 @@ const projectContentData: Project[] = [
       "Private server MMORPG, Classic Cabal Game and Free To Play. Projeto esta em periodo de desenvolvimento, com data de lançamento para Julho 2024.",
     urlToPreview: "https://war-games-demo.vercel.app/",
     urlToGithub: "https://github.com/brunoacev/war-games-demo",
-    date: "Atualmente",
+    date: "Setembro de 2023 - Atualmente",
     image: "/logos/wargames.png",
     stack: [
       "Freelancer",
