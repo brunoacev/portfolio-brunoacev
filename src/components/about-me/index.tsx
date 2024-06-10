@@ -1,7 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Section } from "../section-wrapper";
-import { ExternalLink } from "lucide-react";
 
 function AboutMe() {
   return (
