@@ -3,7 +3,6 @@ import { ToggleTheme } from "./toggle-theme";
 import { MobileMenu } from "./mobile-menu";
 
 const navItems = [
-  { id: 1, title: "Blog", url: "/blog" },
   { id: 2, title: "Github", url: "https://github.com/brunoacev" },
   {
     id: 3,
