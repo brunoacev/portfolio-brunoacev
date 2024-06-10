@@ -68,7 +68,7 @@ function Card(props: CardType) {
               target="_blank"
               className="text-sm hover:underline"
             >
-              Acesse ao site
+              Acesse a Demo
             </Link>
             <Link
               href={props.urlToGithub}
