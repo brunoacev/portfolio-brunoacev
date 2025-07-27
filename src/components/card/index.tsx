@@ -62,22 +62,26 @@ function Card(props: CardType) {
             height={300}
             className="object-fill rounded-md"
           />
-          <div className="flex flex-col gap-1">
-            <Link
-              href={props.urlToPreview}
-              target="_blank"
-              className="text-sm hover:underline"
-            >
-              Acesse a Demo
-            </Link>
-            <Link
-              href={props.urlToGithub}
-              target="_blank"
-              className="text-sm hover:underline"
-            >
-              Acesse ao github
-            </Link>
-          </div>
+          {props.contractType !== "CLT" && (
+            <div className="flex flex-col gap-1">
+              <Link
+                href={props.urlToPreview}
+                target="_blank"
+                className="text-sm hover:underline"
+              >
+                Acesse a Demo
+              </Link>
+              <Link
+                href={props.urlToGithub}
+                target="_blank"
+                className="text-sm hover:underline"
+              >
+                Acesse ao GitHub
+              </Link>
+            </div>
+          )}
+
+
         </div>
         <div className="flex flex-col justify-between gap-4">
           <div className="flex flex-col gap-1">

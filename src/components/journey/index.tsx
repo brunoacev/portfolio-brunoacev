@@ -6,7 +6,7 @@ import { Cards } from "./cards";
 function Journey() {
   return (
     <Section.Wrapper>
-      <Section.Header>Trajeto</Section.Header>
+      <Section.Header>Formação</Section.Header>
       <Notation />
       <Section.Content className="flex h-full gap-8 md:flex-col">
         <Section.Box className="flex min-h-full gap-1 md:flex-col md:w-full">

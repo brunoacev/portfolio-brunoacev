@@ -8,7 +8,7 @@ function BarProgress() {
     <Section.Box className="flex md:flex-col md:gap-2">
       <div className="bg-zinc-200/60 dark:bg-zinc-800/50 w-fit h-full  rounded-full p-1.5 md:w-full">
         <div
-          className={cn("p-1 h-[55%] bg-green-500 rounded-full md:w-[55%]")}
+          className={cn("p-1 h-[55%] bg-green-500 rounded-full md:w-[90%]")}
         />
       </div>
       <Section.Box className="flex flex-col justify-between md:flex-row">

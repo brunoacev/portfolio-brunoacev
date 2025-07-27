@@ -19,6 +19,8 @@ type ProjectCard = {
   urlToPreview: string;
   urlToGithub: string;
   stack: string[];
+  contractType?: string;
+  projectOrigin?: string;
 };
 
 export type { CardType };

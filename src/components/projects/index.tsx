@@ -5,7 +5,7 @@ import { Card } from "../card";
 function Projects() {
   return (
     <Section.Wrapper>
-      <Section.Header>Trabalhos</Section.Header>
+      <Section.Header>Experiências e Projetos</Section.Header>
 
       <Section.Content className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
         {projectContentData.map((content) => (
