@@ -11,7 +11,7 @@ function Card(props: CardType) {
     return (
       <div
         className={cn(
-          "w-full max-w-sm md:h-72 p-4 dark:border-l border:border-t rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col gap-4 ",
+          "w-fit md:h-72 p-4 dark:border-l border:border-t rounded-md dark:bg-zinc-900/80 bg-white text-popover-foreground shadow-md outline-none flex flex-col gap-4 ",
           props.className
         )}
       >
@@ -28,21 +28,21 @@ function Card(props: CardType) {
               {props.subtitle}
             </h4>
           </div>
-          <p className="text-sm text-balance font-light">{props.description}</p>
+          <div className=" font-light flex gap-1 flex-wrap">
+            {props.description.split(',').map((item, index) => (
+              <p className="text-xs text-balance p-2 tracking-wider text-center bg-zinc-100 dark:bg-zinc-600/20 rounded-md" key={index}>{item.trim()}</p>
+            ))}
+          </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />
               <span className="text-xs text-muted-foreground">
-                {props.date?.split("-")[0]}
+                {props.date?.split("-")[0]} - {props.date?.split("-")[1]}
               </span>
             </div>
-            <div className="flex gap-2 items-center">
-              <CalendarIcon className="mr-2 h-4 w-4 opacity-70" />
-              <span className="text-xs text-muted-foreground">
-                {props.date?.split("-")[1]}
-              </span>
-            </div>
+          
           </div>
+         
         </div>
       </div>
     );

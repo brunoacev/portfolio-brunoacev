@@ -5,6 +5,7 @@ type CardType = {
   description: string;
   className?: string;
   date: string;
+
 } & (JourneyCard | ProjectCard);
 
 type JourneyCard = {
@@ -18,9 +19,9 @@ type ProjectCard = {
   image: string;
   urlToPreview?: string;
   urlToGithub?: string;
-  stack: string[];
   contractType?: string;
   projectOrigin?: string;
+  stack: string[];
 };
 
 export type { CardType };
