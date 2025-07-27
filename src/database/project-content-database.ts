@@ -8,8 +8,8 @@ type Project = {
   urlToGithub?: string;
   image: string;
   stack: string[];
-  contractType?: "CLT" | "freelancer";
-  projectOrigin?: "personal" | "professional";
+  contractType?: string;
+  projectOrigin?: string;
 
 };
 

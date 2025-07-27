@@ -16,8 +16,8 @@ type JourneyCard = {
 type ProjectCard = {
   type: "ProjectCard";
   image: string;
-  urlToPreview: string;
-  urlToGithub: string;
+  urlToPreview?: string;
+  urlToGithub?: string;
   stack: string[];
   contractType?: string;
   projectOrigin?: string;

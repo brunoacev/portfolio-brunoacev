@@ -64,20 +64,24 @@ function Card(props: CardType) {
           />
           {props.contractType !== "CLT" && (
             <div className="flex flex-col gap-1">
-              <Link
-                href={props.urlToPreview}
-                target="_blank"
-                className="text-sm hover:underline"
-              >
-                Acesse a Demo
-              </Link>
-              <Link
-                href={props.urlToGithub}
-                target="_blank"
-                className="text-sm hover:underline"
-              >
-                Acesse ao GitHub
-              </Link>
+              {props.urlToGithub && (
+                <Link
+                  href={props.urlToPreview as string}
+                  target="_blank"
+                  className="text-sm hover:underline"
+                >
+                  Acesse ao Demo
+                </Link>
+              )}
+              {props.urlToGithub && (
+                <Link
+                  href={props.urlToGithub as string}
+                  target="_blank"
+                  className="text-sm hover:underline"
+                >
+                  Acesse ao Github
+                </Link>
+              )}
             </div>
           )}
 
